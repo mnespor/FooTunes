@@ -7,14 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C1FA0A91E3D1D7F00268395 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1FA0A81E3D1D7F00268395 /* AudioPlayer.swift */; };
+		1C1FA0AB1E3D1D8C00268395 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1FA0AA1E3D1D8C00268395 /* ViewModel.swift */; };
+		1C1FA0AF1E3D1FAB00268395 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C1FA0AE1E3D1FAB00268395 /* AVFoundation.framework */; };
+		1C1FA0B11E3D1FB100268395 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C1FA0B01E3D1FB100268395 /* MediaPlayer.framework */; };
 		1CAA7DE11E3D0BBF00C292E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAA7DE01E3D0BBF00C292E1 /* AppDelegate.swift */; };
 		1CAA7DE31E3D0BBF00C292E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAA7DE21E3D0BBF00C292E1 /* ViewController.swift */; };
 		1CAA7DE61E3D0BBF00C292E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CAA7DE41E3D0BBF00C292E1 /* Main.storyboard */; };
 		1CAA7DE81E3D0BBF00C292E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CAA7DE71E3D0BBF00C292E1 /* Assets.xcassets */; };
 		1CAA7DEB1E3D0BBF00C292E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CAA7DE91E3D0BBF00C292E1 /* LaunchScreen.storyboard */; };
+		AD2F09D770CC1E400A315BBC /* Pods_FooTunes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA2A0A546888BEFC5ED646E4 /* Pods_FooTunes.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		088666E78F7A3253446CDCCF /* Pods-FooTunes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FooTunes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FooTunes/Pods-FooTunes.debug.xcconfig"; sourceTree = "<group>"; };
+		1C1FA0A81E3D1D7F00268395 /* AudioPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+		1C1FA0AA1E3D1D8C00268395 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		1C1FA0AE1E3D1FAB00268395 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		1C1FA0B01E3D1FB100268395 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		1CAA7DDD1E3D0BBF00C292E1 /* FooTunes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FooTunes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CAA7DE01E3D0BBF00C292E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1CAA7DE21E3D0BBF00C292E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +32,8 @@
 		1CAA7DE71E3D0BBF00C292E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1CAA7DEA1E3D0BBF00C292E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1CAA7DEC1E3D0BBF00C292E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86C545F2588750BB413C1510 /* Pods-FooTunes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FooTunes.release.xcconfig"; path = "Pods/Target Support Files/Pods-FooTunes/Pods-FooTunes.release.xcconfig"; sourceTree = "<group>"; };
+		EA2A0A546888BEFC5ED646E4 /* Pods_FooTunes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FooTunes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +41,54 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C1FA0B11E3D1FB100268395 /* MediaPlayer.framework in Frameworks */,
+				1C1FA0AF1E3D1FAB00268395 /* AVFoundation.framework in Frameworks */,
+				AD2F09D770CC1E400A315BBC /* Pods_FooTunes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13563401A165B9A5305C06BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1C1FA0B01E3D1FB100268395 /* MediaPlayer.framework */,
+				1C1FA0AE1E3D1FAB00268395 /* AVFoundation.framework */,
+				EA2A0A546888BEFC5ED646E4 /* Pods_FooTunes.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1C1FA0AC1E3D1D9800268395 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1CAA7DEC1E3D0BBF00C292E1 /* Info.plist */,
+				1CAA7DE41E3D0BBF00C292E1 /* Main.storyboard */,
+				1CAA7DE71E3D0BBF00C292E1 /* Assets.xcassets */,
+				1CAA7DE91E3D0BBF00C292E1 /* LaunchScreen.storyboard */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		1C1FA0AD1E3D1D9F00268395 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				1CAA7DE01E3D0BBF00C292E1 /* AppDelegate.swift */,
+				1C1FA0A81E3D1D7F00268395 /* AudioPlayer.swift */,
+				1CAA7DE21E3D0BBF00C292E1 /* ViewController.swift */,
+				1C1FA0AA1E3D1D8C00268395 /* ViewModel.swift */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
 		1CAA7DD41E3D0BBE00C292E1 = {
 			isa = PBXGroup;
 			children = (
 				1CAA7DDF1E3D0BBF00C292E1 /* FooTunes */,
 				1CAA7DDE1E3D0BBF00C292E1 /* Products */,
+				A224312459BD5A6A66DFD636 /* Pods */,
+				13563401A165B9A5305C06BC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +103,19 @@
 		1CAA7DDF1E3D0BBF00C292E1 /* FooTunes */ = {
 			isa = PBXGroup;
 			children = (
-				1CAA7DE01E3D0BBF00C292E1 /* AppDelegate.swift */,
-				1CAA7DE21E3D0BBF00C292E1 /* ViewController.swift */,
-				1CAA7DE41E3D0BBF00C292E1 /* Main.storyboard */,
-				1CAA7DE71E3D0BBF00C292E1 /* Assets.xcassets */,
-				1CAA7DE91E3D0BBF00C292E1 /* LaunchScreen.storyboard */,
-				1CAA7DEC1E3D0BBF00C292E1 /* Info.plist */,
+				1C1FA0AD1E3D1D9F00268395 /* Source */,
+				1C1FA0AC1E3D1D9800268395 /* Resources */,
 			);
 			path = FooTunes;
+			sourceTree = "<group>";
+		};
+		A224312459BD5A6A66DFD636 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				088666E78F7A3253446CDCCF /* Pods-FooTunes.debug.xcconfig */,
+				86C545F2588750BB413C1510 /* Pods-FooTunes.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +125,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1CAA7DEF1E3D0BBF00C292E1 /* Build configuration list for PBXNativeTarget "FooTunes" */;
 			buildPhases = (
+				4FFF14BD894E56D5EC08E149 /* [CP] Check Pods Manifest.lock */,
 				1CAA7DD91E3D0BBE00C292E1 /* Sources */,
 				1CAA7DDA1E3D0BBE00C292E1 /* Frameworks */,
 				1CAA7DDB1E3D0BBE00C292E1 /* Resources */,
+				768A1DA3E54BF73DE3716933 /* [CP] Embed Pods Frameworks */,
+				AE3023DEEFDAA78B63C88B3D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +153,7 @@
 				TargetAttributes = {
 					1CAA7DDC1E3D0BBE00C292E1 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = HE547YGUS5;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,6 +189,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4FFF14BD894E56D5EC08E149 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		768A1DA3E54BF73DE3716933 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FooTunes/Pods-FooTunes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE3023DEEFDAA78B63C88B3D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FooTunes/Pods-FooTunes-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1CAA7DD91E3D0BBE00C292E1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -138,6 +244,8 @@
 			files = (
 				1CAA7DE31E3D0BBF00C292E1 /* ViewController.swift in Sources */,
 				1CAA7DE11E3D0BBF00C292E1 /* AppDelegate.swift in Sources */,
+				1C1FA0AB1E3D1D8C00268395 /* ViewModel.swift in Sources */,
+				1C1FA0A91E3D1D7F00268395 /* AudioPlayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +364,10 @@
 		};
 		1CAA7DF01E3D0BBF00C292E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 088666E78F7A3253446CDCCF /* Pods-FooTunes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HE547YGUS5;
 				INFOPLIST_FILE = FooTunes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mnespor.FooTunes;
@@ -268,8 +378,10 @@
 		};
 		1CAA7DF11E3D0BBF00C292E1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86C545F2588750BB413C1510 /* Pods-FooTunes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HE547YGUS5;
 				INFOPLIST_FILE = FooTunes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mnespor.FooTunes;
@@ -297,6 +409,7 @@
 				1CAA7DF11E3D0BBF00C292E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

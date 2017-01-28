@@ -7,19 +7,24 @@
 //
 
 import UIKit
+import EqualizerIndicatorView
 
 class ViewController: UIViewController {
+    fileprivate let viewModel = ViewModel()
+
+    @IBOutlet weak var equalizerView: EqualizerIndicatorView!
+    @IBOutlet weak var playPauseButton: UIButton!
+    @IBOutlet weak var slider: UISlider!
+    @IBOutlet weak var playheadLabel: UILabel!
+    @IBOutlet weak var durationLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        equalizerView.setState(.play, animated: true)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
-
-
 }
 
