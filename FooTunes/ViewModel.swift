@@ -18,14 +18,21 @@ class ViewModel {
         case paused
     }
 
-    let player = AVPlayer()
+    let player: AVPlayer = {
+        if let url = Bundle.main.url(forResource: "bustin", withExtension: "mp3") {
+            return AVPlayer(url: url)
+        } else {
+            print("add a media item to the bundle")
+            return AVPlayer()
+        }
+    }()
+
     let status: Property<Status>
     let playHead: Property<CMTime>
     let duration: Property<CMTime>
     let progress: Property<Float>
 
     init() {
-        loadMedia(into: player)
         self.status = statusProperty(for: player)
         self.playHead = playHeadProperty(for: player)
         self.duration = durationProperty(for: player)
@@ -47,14 +54,6 @@ class ViewModel {
         case .waitingToPlayAtSpecifiedRate:
             break;
         }
-    }
-}
-
-fileprivate func loadMedia(into player: AVPlayer) {
-    if let url = Bundle.main.url(forResource: "bustin", withExtension: "mp3") {
-        player.replaceCurrentItem(with: AVPlayerItem(url: url))
-    } else {
-        print("add a media item to the bundle")
     }
 }
 
