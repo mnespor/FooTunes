@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1C1FA0A91E3D1D7F00268395 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1FA0A81E3D1D7F00268395 /* AudioPlayer.swift */; };
-		1C1FA0AB1E3D1D8C00268395 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1FA0AA1E3D1D8C00268395 /* ViewModel.swift */; };
+		1C1FA0A91E3D1D7F00268395 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1FA0A81E3D1D7F00268395 /* ViewModel.swift */; };
 		1C1FA0AF1E3D1FAB00268395 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C1FA0AE1E3D1FAB00268395 /* AVFoundation.framework */; };
-		1C1FA0B11E3D1FB100268395 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C1FA0B01E3D1FB100268395 /* MediaPlayer.framework */; };
+		1C2ACD241E3D64D500D66E59 /* EqualizerIndicatorView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2ACD231E3D64D500D66E59 /* EqualizerIndicatorView+.swift */; };
+		1C2ACD261E3D6AD900D66E59 /* bustin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1C2ACD251E3D6AD900D66E59 /* bustin.mp3 */; };
+		1C2ACD281E3DAE5C00D66E59 /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2ACD271E3DAE5C00D66E59 /* UIButton+.swift */; };
+		1C2ACD2A1E3DB0EF00D66E59 /* CMTime+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2ACD291E3DB0EF00D66E59 /* CMTime+.swift */; };
 		1CAA7DE11E3D0BBF00C292E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAA7DE01E3D0BBF00C292E1 /* AppDelegate.swift */; };
 		1CAA7DE31E3D0BBF00C292E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAA7DE21E3D0BBF00C292E1 /* ViewController.swift */; };
 		1CAA7DE61E3D0BBF00C292E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CAA7DE41E3D0BBF00C292E1 /* Main.storyboard */; };
@@ -21,10 +23,13 @@
 
 /* Begin PBXFileReference section */
 		088666E78F7A3253446CDCCF /* Pods-FooTunes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FooTunes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FooTunes/Pods-FooTunes.debug.xcconfig"; sourceTree = "<group>"; };
-		1C1FA0A81E3D1D7F00268395 /* AudioPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
-		1C1FA0AA1E3D1D8C00268395 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		1C1FA0A81E3D1D7F00268395 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		1C1FA0AE1E3D1FAB00268395 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		1C1FA0B01E3D1FB100268395 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		1C2ACD231E3D64D500D66E59 /* EqualizerIndicatorView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EqualizerIndicatorView+.swift"; sourceTree = "<group>"; };
+		1C2ACD251E3D6AD900D66E59 /* bustin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bustin.mp3; sourceTree = "<group>"; };
+		1C2ACD271E3DAE5C00D66E59 /* UIButton+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+.swift"; sourceTree = "<group>"; };
+		1C2ACD291E3DB0EF00D66E59 /* CMTime+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMTime+.swift"; sourceTree = "<group>"; };
 		1CAA7DDD1E3D0BBF00C292E1 /* FooTunes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FooTunes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CAA7DE01E3D0BBF00C292E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1CAA7DE21E3D0BBF00C292E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -41,7 +46,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C1FA0B11E3D1FB100268395 /* MediaPlayer.framework in Frameworks */,
 				1C1FA0AF1E3D1FAB00268395 /* AVFoundation.framework in Frameworks */,
 				AD2F09D770CC1E400A315BBC /* Pods_FooTunes.framework in Frameworks */,
 			);
@@ -63,6 +67,7 @@
 		1C1FA0AC1E3D1D9800268395 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1C2ACD251E3D6AD900D66E59 /* bustin.mp3 */,
 				1CAA7DEC1E3D0BBF00C292E1 /* Info.plist */,
 				1CAA7DE41E3D0BBF00C292E1 /* Main.storyboard */,
 				1CAA7DE71E3D0BBF00C292E1 /* Assets.xcassets */,
@@ -75,9 +80,11 @@
 			isa = PBXGroup;
 			children = (
 				1CAA7DE01E3D0BBF00C292E1 /* AppDelegate.swift */,
-				1C1FA0A81E3D1D7F00268395 /* AudioPlayer.swift */,
+				1C2ACD291E3DB0EF00D66E59 /* CMTime+.swift */,
+				1C2ACD231E3D64D500D66E59 /* EqualizerIndicatorView+.swift */,
+				1C2ACD271E3DAE5C00D66E59 /* UIButton+.swift */,
 				1CAA7DE21E3D0BBF00C292E1 /* ViewController.swift */,
-				1C1FA0AA1E3D1D8C00268395 /* ViewModel.swift */,
+				1C1FA0A81E3D1D7F00268395 /* ViewModel.swift */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -148,7 +155,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Matthew Nespor";
 				TargetAttributes = {
 					1CAA7DDC1E3D0BBE00C292E1 = {
@@ -182,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CAA7DEB1E3D0BBF00C292E1 /* LaunchScreen.storyboard in Resources */,
+				1C2ACD261E3D6AD900D66E59 /* bustin.mp3 in Resources */,
 				1CAA7DE81E3D0BBF00C292E1 /* Assets.xcassets in Resources */,
 				1CAA7DE61E3D0BBF00C292E1 /* Main.storyboard in Resources */,
 			);
@@ -243,9 +251,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CAA7DE31E3D0BBF00C292E1 /* ViewController.swift in Sources */,
+				1C2ACD241E3D64D500D66E59 /* EqualizerIndicatorView+.swift in Sources */,
 				1CAA7DE11E3D0BBF00C292E1 /* AppDelegate.swift in Sources */,
-				1C1FA0AB1E3D1D8C00268395 /* ViewModel.swift in Sources */,
-				1C1FA0A91E3D1D7F00268395 /* AudioPlayer.swift in Sources */,
+				1C1FA0A91E3D1D7F00268395 /* ViewModel.swift in Sources */,
+				1C2ACD2A1E3DB0EF00D66E59 /* CMTime+.swift in Sources */,
+				1C2ACD281E3DAE5C00D66E59 /* UIButton+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +299,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -338,6 +349,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

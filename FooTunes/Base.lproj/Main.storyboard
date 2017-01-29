@@ -32,18 +32,13 @@
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="barCount">
-                                        <integer key="value" value="5"/>
+                                        <integer key="value" value="7"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="barSpacing">
                                         <real key="value" value="3"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="SWY-hE-nJt">
-                                <rect key="frame" x="14" y="371" width="347" height="31"/>
-                                <color key="minimumTrackTintColor" red="1" green="1" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="maximumTrackTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                            </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t6L-j1-p9O">
                                 <rect key="frame" x="16" y="388" width="42" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -65,6 +60,12 @@
                                 <color key="tintColor" red="1" green="1" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" image="play"/>
                             </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="JD3-3j-0Qd">
+                                <rect key="frame" x="16" y="378" width="343" height="2"/>
+                                <color key="tintColor" red="1" green="1" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="progressTintColor" red="1" green="1" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="trackTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </progressView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.25825421677777782" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -72,13 +73,14 @@
                             <constraint firstItem="rwO-vS-jdu" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="4z4-Yu-pJC"/>
                             <constraint firstItem="9K3-lx-BVc" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="76v-Yj-EZC"/>
                             <constraint firstItem="rOW-LR-3oy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9SX-Df-Xae"/>
-                            <constraint firstItem="SWY-hE-nJt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="V7V-ae-fRI"/>
+                            <constraint firstItem="JD3-3j-0Qd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Ycv-XV-eSM"/>
                             <constraint firstItem="t6L-j1-p9O" firstAttribute="top" secondItem="9K3-lx-BVc" secondAttribute="bottom" constant="25" id="YsB-HG-wfj"/>
                             <constraint firstItem="t6L-j1-p9O" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="aoJ-Vd-8ED"/>
                             <constraint firstItem="rwO-vS-jdu" firstAttribute="top" secondItem="9K3-lx-BVc" secondAttribute="bottom" constant="25" id="biG-kD-brR"/>
-                            <constraint firstItem="rOW-LR-3oy" firstAttribute="top" secondItem="SWY-hE-nJt" secondAttribute="bottom" constant="8" id="dL5-Km-0Gc"/>
-                            <constraint firstItem="SWY-hE-nJt" firstAttribute="top" secondItem="9K3-lx-BVc" secondAttribute="bottom" constant="8" id="fw1-Oa-1Hr"/>
-                            <constraint firstItem="SWY-hE-nJt" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="iit-uI-eK9"/>
+                            <constraint firstItem="JD3-3j-0Qd" firstAttribute="top" secondItem="9K3-lx-BVc" secondAttribute="bottom" constant="15" id="cTP-dn-OHb"/>
+                            <constraint firstItem="rwO-vS-jdu" firstAttribute="top" secondItem="JD3-3j-0Qd" secondAttribute="bottom" constant="8" id="fyj-oa-EpX"/>
+                            <constraint firstItem="rOW-LR-3oy" firstAttribute="top" secondItem="JD3-3j-0Qd" secondAttribute="bottom" constant="29" id="meI-Ey-vAz"/>
+                            <constraint firstItem="JD3-3j-0Qd" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="rHW-a7-MLj"/>
                             <constraint firstItem="9K3-lx-BVc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="wlI-eX-5xF"/>
                         </constraints>
                     </view>
@@ -88,7 +90,7 @@
                         <outlet property="equalizerView" destination="9K3-lx-BVc" id="qGG-n4-pVv"/>
                         <outlet property="playPauseButton" destination="rOW-LR-3oy" id="RmO-8f-zla"/>
                         <outlet property="playheadLabel" destination="t6L-j1-p9O" id="nVN-Or-oHV"/>
-                        <outlet property="slider" destination="SWY-hE-nJt" id="7t3-94-Avh"/>
+                        <outlet property="progressView" destination="JD3-3j-0Qd" id="kJv-Cc-vP7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
