@@ -13,6 +13,7 @@ import ReactiveSwift
 
 class ViewController: UIViewController {
     fileprivate let viewModel = ViewModel()
+
     fileprivate static let playImage = UIImage(named: "play")!.withRenderingMode(.alwaysTemplate)
     fileprivate static let pauseImage = UIImage(named: "pause")!.withRenderingMode(.alwaysTemplate)
 
@@ -26,8 +27,8 @@ class ViewController: UIViewController {
         durationLabel.reactive.text <~ viewModel.duration.map { $0.format() }
         playheadLabel.reactive.text <~ viewModel.playHead.map { $0.format() }
         progressView.reactive.progress <~ viewModel.progress
-        equalizerView.reactive.state <~ viewModel.status.map { timeControlStatus in
-            switch timeControlStatus {
+        equalizerView.reactive.state <~ viewModel.status.map { status in
+            switch status {
             case .paused:
                 return EqualizerIndicatorView.state.stop
             case .playing:
@@ -35,8 +36,8 @@ class ViewController: UIViewController {
             }
         }
 
-        playPauseButton.reactive.bindingTargetForImage(state: .normal) <~ viewModel.status.map { timeControlStatus in
-            switch timeControlStatus {
+        playPauseButton.reactive.bindingTargetForImage(state: .normal) <~ viewModel.status.map { status in
+            switch status {
             case .paused:
                 return ViewController.playImage
             case .playing:

@@ -82,4 +82,3 @@ fileprivate func statusProperty(for player: AVPlayer) -> Property<ViewModel.Stat
                             return rate > 0.0 ? .playing : .paused
     })
 }
-
