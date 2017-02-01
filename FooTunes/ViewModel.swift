@@ -18,6 +18,7 @@ class ViewModel {
         case paused
     }
 
+    // The "model" in this demo is an AVPlayer object.
     let player: AVPlayer = {
         if let url = Bundle.main.url(forResource: "bustin", withExtension: "mp3") {
             return AVPlayer(url: url)
@@ -27,6 +28,8 @@ class ViewModel {
         }
     }()
 
+    // The view model exposes bindable properties for the information I want
+    // to render in the view.
     let status: Property<Status>
     let playHead: Property<CMTime>
     let duration: Property<CMTime>
@@ -36,6 +39,7 @@ class ViewModel {
         self.status = statusProperty(for: player)
         self.playHead = playHeadProperty(for: player)
         self.duration = durationProperty(for: player)
+        // Signals are composable
         self.progress = Property(initial: 0.0,
                                  then: playHead.signal.combineLatest(with: duration.signal)
                                     .map({ (current, total) -> Float in
@@ -57,12 +61,20 @@ class ViewModel {
     }
 }
 
+// ReactiveCocoa exposes signals for commonly observed stuff in UIKit:
+// Text field text, UIControl events, slider values, and so on.
+//
+// AVPlayer is not one of those things.
+// However, ReactiveCocoa also provides .values(forKeyPath:), which wraps KVO
+// in a signal.
 fileprivate func durationProperty(for player: AVPlayer) -> Property<CMTime> {
     return Property(initial: player.currentItem?.duration ?? kCMTimeZero,
                     then: player.reactive.values(forKeyPath: "currentItem.duration")
                         .map { ($0 as? CMTime) ?? kCMTimeZero })
 }
 
+// All of AVPlayer's quirkiness is confined to this file. It doesn't escape into
+// the view controller.
 fileprivate func playHeadProperty(for player: AVPlayer) -> Property<CMTime> {
     let oneSecond = CMTime(value: 1, timescale: 1)
     let (timeSignal, timeObserver) = Signal<CMTime, NoError>.pipe()
